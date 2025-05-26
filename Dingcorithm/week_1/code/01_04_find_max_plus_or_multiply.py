@@ -1,5 +1,7 @@
 def find_max_plus_or_multiply(array):
   plus_or_multiply_sum = 0
+  
+  # 시간 복잡도 O(N)
   for number in array:
     if number <= 1 or plus_or_multiply_sum <= 1:
       plus_or_multiply_sum += number
