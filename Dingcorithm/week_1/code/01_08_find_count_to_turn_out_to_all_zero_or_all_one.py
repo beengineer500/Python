@@ -1,5 +1,6 @@
 input = "011110"
 
+
 def find_count_to_turn_out_to_all_zero_or_all_one(string):
     count_to_all_zero = 0
     count_to_all_one = 0
@@ -15,7 +16,7 @@ def find_count_to_turn_out_to_all_zero_or_all_one(string):
                 count_to_all_zero += 1
             if string[i + 1] == "0":
                 count_to_all_one += 1
-
+                
     print(count_to_all_zero, count_to_all_one)
     return min(count_to_all_zero, count_to_all_one)
 
